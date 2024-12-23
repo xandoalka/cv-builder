@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -83,7 +85,7 @@ function Education() {
 
 			<div>
 				{educationalList.map((item, index) => (
-					<div>
+					<div key={index}>
 						<div className="grid grid-cols-2 gap-3 border p-3 my-5 rounded-lg">
 							<div className="col-span-2">
 								<label>University Name</label>

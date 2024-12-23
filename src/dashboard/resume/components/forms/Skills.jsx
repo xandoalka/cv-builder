@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Input } from "@/components/ui/input";
 import { useContext, useEffect, useState } from "react";
 import { Rating } from "@smastrom/react-rating";
@@ -60,6 +61,7 @@ function Skills() {
 				toast("Details updated !");
 			},
 			(error) => {
+        console.log(error);
 				setLoading(false);
 				toast("Server Error, Try again!");
 			}

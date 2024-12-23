@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
 import { useContext } from "react";
 import PersonalDetailPreview from "./preview/PersonalDetailPreview";

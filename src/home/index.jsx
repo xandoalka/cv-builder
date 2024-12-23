@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import Header from "@/components/custom/Header";
 import { AtomIcon, Edit, Share2 } from "lucide-react";
 

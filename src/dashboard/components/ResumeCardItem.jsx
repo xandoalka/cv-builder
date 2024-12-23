@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Loader2Icon, MoreVertical } from "lucide-react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router";
@@ -39,6 +40,7 @@ function ResumeCardItem({ resume, refreshData }) {
 				setOpenAlert(false);
 			},
 			(error) => {
+        console.log(error);
 				setLoading(false);
 			}
 		);

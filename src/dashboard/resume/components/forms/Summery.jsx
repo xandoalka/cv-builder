@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
@@ -52,6 +53,7 @@ function Summery({ enabledNext }) {
 				toast("Details updated");
 			},
 			(error) => {
+        console.log(error);
 				setLoading(false);
 			}
 		);

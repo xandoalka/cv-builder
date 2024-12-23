@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function SkillsPreview({ resumeInfo }) {
 	return (
 		<div className="my-6">

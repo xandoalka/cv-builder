@@ -43,6 +43,7 @@ function AddResume() {
 				}
 			},
 			(error) => {
+        console.log(error);
 				setLoading(false);
 			}
 		);

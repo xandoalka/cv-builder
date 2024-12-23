@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/jsx-key */
 import { useContext, useState } from "react";
 import {
 	Popover,

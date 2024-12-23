@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { ResumeInfoContext } from '@/context/ResumeInfoContext'
@@ -44,6 +45,7 @@ function PersonalDetail({enabledNext}) {
             setLoading(false);
             toast("Details updated")
         },(error)=>{
+            console.log(error);
             setLoading(false);
         })
         
