@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import { Input } from "@/components/ui/input";
 import { useContext, useEffect, useState } from "react";
