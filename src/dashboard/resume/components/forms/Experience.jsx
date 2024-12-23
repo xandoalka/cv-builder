@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import RichTextEditor from "../RichTextEditor";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
 import { useParams } from "react-router";
