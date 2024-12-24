@@ -3,17 +3,20 @@
 import { Button } from "@/components/ui/button";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
 import { Brain, LoaderCircle } from "lucide-react";
-import { useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import {
 	BtnBold,
 	BtnBulletList,
+	BtnClearFormatting,
 	BtnItalic,
 	BtnLink,
 	BtnNumberedList,
 	BtnStrikeThrough,
+	BtnStyles,
 	BtnUnderline,
 	Editor,
 	EditorProvider,
+	HtmlButton,
 	Separator,
 	Toolbar,
 } from "react-simple-wysiwyg";
@@ -39,7 +42,7 @@ function RichTextEditor({ onRichTextEditorChange, index, defaultValue }) {
 		const result = await AIChatSession.sendMessage(prompt);
 		console.log(result.response.text());
 		const resp = result.response.text();
-		setValue(resp.replace("[", "").replace("]", ""));
+		setValue(resp.replace("[", "").replace("]", "").replaceAll('"', "").replaceAll("{", "").replaceAll("}", "").replaceAll("_", " ").replaceAll(".,", "."));
 		setLoading(false);
 	};
 

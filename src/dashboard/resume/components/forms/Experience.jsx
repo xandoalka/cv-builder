@@ -98,7 +98,7 @@ function Experience() {
 				<h2 className="font-bold text-lg">Professional Experience</h2>
 				<p>Add Your previous Job experience</p>
 				<div>
-					{experinceList.map((item, index) => (
+					{experinceList?.map((item, index) => (
 						<div key={index}>
 							<div className="grid grid-cols-2 gap-3 border p-3 my-5 rounded-lg">
 								<div>
